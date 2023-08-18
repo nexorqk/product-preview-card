@@ -12,16 +12,19 @@
 }
 
 body {
-  margin: 0;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   font-weight: 500;
-  /* font-family: 'Fraunces', serif; */
   font-family: "Montserrat", sans-serif;
+  background: var(--cream);
 }
 
-img {
-  display: block;
-  max-width: 100%;
+h1,
+p {
+  margin: 0;
 }
 
 .half {
@@ -29,21 +32,99 @@ img {
 }
 
 .card {
-  max-width: 700px;
-  margin: 0 auto;
-  height: calc(100vh - 20px);
+  margin: auto;
+  max-width: 640px;
   display: flex;
-  align-items: center;
+  background: white;
+  border-radius: 10px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+}
+
+.card__img-desktop {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .card__img-mobile {
   display: none;
 }
 
+.card__info {
+  padding: 30px;
+}
+
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+}
+.title {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 700;
+  max-width: 210px;
+  white-space: break-spaces;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  color: grey;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.card__info-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.price-primary {
+  margin-right: 20px;
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-cyan);
+}
+
+.price-line {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.add-button {
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--dark-cyan);
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: hsl(158, 36%, 20%);
+}
+
+.add-button__icon {
+  margin-right: 10px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .attribution a {
